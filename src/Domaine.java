@@ -33,4 +33,9 @@ public class Domaine {
     	
 		this.nom = nomSansEsp.toLowerCase();
 	}
+	
+	@Override
+	public String toString() {
+	    return nom;
+	}
 }

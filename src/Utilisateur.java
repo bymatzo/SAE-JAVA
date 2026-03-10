@@ -1,37 +1,37 @@
 public class Utilisateur {
 	
-    private String nomAnonyme;
+    private String nom;
     
     
-    Utilisateur(String nomAnonyme){
+    Utilisateur(String nom){
     	
-    	if(nomAnonyme == null)
+    	if(nom == null)
     		throw new IllegalArgumentException("Le nom est null");
     	
-    	String nomSansEsp = nomAnonyme.trim();
+    	String nomSansEsp = nom.trim();
     	
     	if(nomSansEsp.equals(""))
     		throw new IllegalArgumentException("Le nom est vide");
     		
-    		this.nomAnonyme = nomSansEsp;
+    		this.nom = nomSansEsp;
     }
     
     
-	public String getNomAnonyme() {
-		return nomAnonyme;
+	public String getNom() {
+		return nom;
 	}
 
-	public void setNomAnonyme(String nomAnonyme) {
+	public void setNom(String nom) {
 		
-		if(nomAnonyme == null)
+		if(nom == null)
     		throw new IllegalArgumentException("Le nom est null");
     	
-    	String nomSansEsp = nomAnonyme.trim();
+    	String nomSansEsp = nom.trim();
     	
     	if(nomSansEsp.equals(""))
     		throw new IllegalArgumentException("Le nom est vide");
     		
-		this.nomAnonyme = nomSansEsp;
+		this.nom = nomSansEsp;
 	}
 }
 
